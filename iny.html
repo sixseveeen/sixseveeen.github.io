@@ -1,46 +1,125 @@
+<!DOCTYPE html>
 <html lang="sk">
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <title>formatovanie textu</title>
+</head>
+<body>
+
+    <h1> Formátovanie textu </h1>
     <pre>
-      <b>
-        <strong>
-        
-        <p style="text-align: left;"> veta1 aaaaaa</p>
-        <p style="text-align: center;"> veta2 bbbbbbb</p>
+                        Veta na zobrazovanie textu v tagu pre.
+                        Veta na zobrazovanie textu v tagu pre.
+                        Veta na zobrazovanie textu v tagu pre.
+                        Veta na zobrazovanie textu v tagu pre.
+                    </pre>
 
-        p style="text-align: left;" - center, right, justify
-          <p >
-            nejaka <span style="text-decoration: underline overline;
-            text-decoration color: red;"> veta3 cccccc<span/> z internetu </p>
+    <p>
+        Veta na zobrazovanie textu v tagu p.<br>
+        Veta na zobrazovanie textu v tagu p.<br>
+        Veta na zobrazovanie textu v tagu p.
+        Veta na zobrazovanie textu v tagu p.
+    </p>
 
-        <p style="text-transform; none;"> veta4 dddddd</p>
-        <p style="text-transform: lowercase;"> veta5 eeeeeEEEEeeeEe</p>
+
+    <p> - text </p>
+    <pre> - prreformatted text </pre>
+    <p> pouziva sa na <span>ohranicenie textu,</span> ktory sa ma zobrazovat inak</p>
+
+    <hr>
+    <a href="www.isdevelop.sk/prvaci">www.isdevelop.sk/prvaci</a>
+    <p>iPhone XS <b>Luxusný</b>, trochu opozeraný dizajn</p>
+    <p>Vybrala <i>som si striebornú</i> verz</p>
+    <p>vytvorit subor formatovanie.html + zakladna struktura html</p>
+    <hr>
+
+    <p>text <b>Bold text</b> text</p>
+    <p>text <strong>Bold text</strong> text</p>
+    <p>text <i>Italic text</i> text</p>
+    <p>text <em>Emphasized text</em> text</p>
+    <p>text <mark>Marked text</mark> text</p>
+    <p>text <sup>Superscript text</sup> text</p>
+    <p>text <sub>Subscript text</sub> text</p>
+    <p>text <small>Smaller text</small> text</p>
+    <p>text <del>Deleted text</del> text</p>
+    <p>text <ins>Inserted text</ins> text</p>
+    <p>text <u>Inserted text</u> text</p>
+    <template> <p> skryt - hidden </p></template>
+
+    <br> <!-- zalomenie riadku -->
+    <hr> <!-- neparovy tag, ciara -->
+
+    <!-- style="property: Value; vlastnost: Hodnota;" -->
+    <!--style="color: red;" -->
+
+    <p style="color: red;"> Veta.</p>
+    <p>text <span style="color: #ff0000;"> veta1. </span>
+    <span style="color: rgb(255,0,0);"> veta2. </span></p>
+
+    <p style="color: red;">cerveny text</p>
+    <p style="color: #ff0000;">cerveny text</p>
+    <p style="color: rgb(255, 0, 0);">cerveny text</p>
+    <!-- rgb(red, green, blue) -->
+
+     <p style="color: hsl(120, 100%, 50%);">zeleny text</p>
+    <!-- hsl(odtien, sitost, svetlost) -->
 
 
-      <p style="color: red;"> Veta. </p>
-      <p><span style="color: #003399;"> veta1. <span>
-      <p><span style="color: #990099;"> veta2. <span>
-      <p><span style="color: #ccff66;"> veta3. <span>
-      <span style="color: rgb(255, 0 ,0);"> veta4. </span></p>
-      <span style="color: rgb(141, 212 ,0);"> veta5. </span></p>
-      <span style="color: hsl(285, 100%, 60%);"> veta6. </span></p>
-              
-        <p style="text-indent: 50px;"> - odsek </p>
-          <p style="letter-spacing: 3px;"> - -10px </p>
-          <p style="line-height: 2.8;"> w speed </p>
-          <p style="word-spacing: 10px;"> -normal aaa </p>
-      <p   style="white-space: nowrap;"> - normal bbb </p>
-       <p    style="text-shadow: 2px 2pc 5px red;"> - normal ccc </p>
-        <p   style="text-shadow: 2px 2pc 5px rgb(255, 0 ,0);"> - normal ddd</p>
-         <p  style="text-shadow: 2px 2pc 5px hsl(285, 100%, 60%);"> - normal eee</p>
-          <p style="text-shadow: 2px 2pc 5px color: #ccff66;"> - normal fff</p>
+    <p style="color: rgba(255, 0, 0, 0.5);">cerveny text</p>
+    <!-- rgba(red, green, blue, alpha) -->
 
-          <p style="direction: rtl; unicode-bidi: bidi-override;"> jaouhbduioawd</p>
-            <p style="font-family: 'Times New Roman', Arial;"> times new roman </p>
-            <p style="font-size: 20px;"> haha </p>
-            
-          
-              
-        </strong>
-      </b>
-    </pre>
-  </body>
+    <p style="color: hsla(120, 100%, 50%, 0.4);">zeleny text</p>
+    <!-- hsla(hue, saturation, lightness, alpha) -->
+
+   <div style="border: 5px solid red;
+       height: 200px; width:250px; margin: 0 0 0 50px;">
+           <p>blok,</p>
+           <div style="border: 5px dotted red;
+               background-color: rgb(200,56,42);
+               border-radius: 25px 50px">
+               <p>vnoreny blok</p>
+           </div>
+   </div>
+
+   <p style="text-align: left;"> veta1. </p>
+   <p style="text-align: center;">veta2. veta3</p>
+   <p style="text-align: right;"> veta1. </p>
+   <p style="text-align: justify;">veta2. veta3</p>
+
+    <p>
+       nejaka <span style="text-decoration: underline overline;
+       text-decoration-color: red;">veta</span> z internetu.
+    </p>
+
+   <p style="text-decoration: line-through;">veta2. veta3</p>
+   <a href="www.google.sk"	style="text-decoration: none;">odkaz</a>
+
+   <p style="text-transform: none;">veta na ukazku.</p>
+   <p style="text-transform: lowercase;">veta na ukazku.</p>
+   <p style="text-transform: uppercase;">veta na ukazku.</p>
+   <p style="text-transform: capitalize;">veta na ukazku.</p>
+
+   <p style="text-indent: 50px;"> veta odsek </p>
+
+   <p style="letter-spacing: 3px;"> veta -10px </p>
+
+   <p style="line-height: 2.8;"> veta </p>
+
+   <p style="word-spacing: 10px;">veta </p>
+
+   <p style="white-space: nowrap;"> veta normal </p>
+
+   <p style="text-shadow: 2px 2px 5px red;"> veta </p>
+
+   <p style="direction: rtl; unicode-bidi: bidi-override;">veta </p>
+
+   <p style="font-family: Arial, 'Times New Roman';"> veta </p>
+
+   <p style="font-size: 20px;"> veta </p>
+
+   <p style="font-weight: normal;"> veta -bold, bolder, lighter </p>
+
+   <p style="font-style: italic;">veta -normal </p>
+
+    </body>
+</html>
