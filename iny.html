@@ -2,124 +2,113 @@
 <html lang="sk">
 <head>
     <meta charset="UTF-8">
-    <title>formatovanie textu</title>
+    <title>Grafika a odkazy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-    <h1> Formátovanie textu </h1>
-    <pre>
-                        Veta na zobrazovanie textu v tagu pre.
-                        Veta na zobrazovanie textu v tagu pre.
-                        Veta na zobrazovanie textu v tagu pre.
-                        Veta na zobrazovanie textu v tagu pre.
-                    </pre>
-
-    <p>
-        Veta na zobrazovanie textu v tagu p.<br>
-        Veta na zobrazovanie textu v tagu p.<br>
-        Veta na zobrazovanie textu v tagu p.
-        Veta na zobrazovanie textu v tagu p.
-    </p>
-
-
-    <p> - text </p>
-    <pre> - prreformatted text </pre>
-    <p> pouziva sa na <span>ohranicenie textu,</span> ktory sa ma zobrazovat inak</p>
+    <img src="http://localhost/adlerka/image/adlerka.jpg" alt="logo Adlerka"
+         title="Naša škola" width="200px" height="200px">
 
     <hr>
-    <a href="www.isdevelop.sk/prvaci">www.isdevelop.sk/prvaci</a>
-    <p>iPhone XS <b>Luxusný</b>, trochu opozeraný dizajn</p>
-    <p>Vybrala <i>som si striebornú</i> verz</p>
-    <p>vytvorit subor formatovanie.html + zakladna struktura html</p>
+    <h1>Align image with CSS</h1>
+
+    <h2>vertical-align: bottom</h2>
+    <p>This is some text. <img src="http://localhost/adlerka/image/adlerka.jpg"
+                                alt="Adlerka" width="42" height="42"
+                               style="vertical-align:bottom">
+        This is some text. This is some text. This is some text.</p>
+    <hr>
+    <h2>vertical-align: middle</h2>
+    <p>This is some text. <img src="http://localhost/adlerka/image/adlerka.jpg"
+                               alt="Adlerka" width="42" height="42"
+                               style="vertical-align:middle">
+        This is some text. This is some text. This is some text.</p>
+    <hr>
+    <h2>vertical-align: top</h2>
+    <p>This is some text. <img src="http://localhost/adlerka/image/adlerka.jpg"
+                               alt="Adlerka" width="42" height="42"
+        This is some text. This is some text. This is some text.</p>
+    <hr>
+    <h2>float: right</h2>
+    <p>This is some text. <img src="http://localhost/adlerka/image/adlerka.jpg"
+                               alt="Adlerka" width="42" height="42"
+                               style="float:right">
+        This is some text. This is some text. This is some text.</p>
+    <hr>
+    <h2>float: left</h2>
+    <p>This is some text. <img src="http://localhost/adlerka/image/adlerka.jpg"
+                               alt="SAdlerka" width="42" height="42"
+                               style="float:left">
+        This is some text. This is some text. This is some text.</p>
+    <hr>
+    <img src="http://localhost/adlerka/image/adlerka.jpg"  alt="Oramovanie"
+         width="42" height="42" style="border:5px solid black">
     <hr>
 
-    <p>text <b>Bold text</b> text</p>
-    <p>text <strong>Bold text</strong> text</p>
-    <p>text <i>Italic text</i> text</p>
-    <p>text <em>Emphasized text</em> text</p>
-    <p>text <mark>Marked text</mark> text</p>
-    <p>text <sup>Superscript text</sup> text</p>
-    <p>text <sub>Subscript text</sub> text</p>
-    <p>text <small>Smaller text</small> text</p>
-    <p>text <del>Deleted text</del> text</p>
-    <p>text <ins>Inserted text</ins> text</p>
-    <p>text <u>Inserted text</u> text</p>
-    <template> <p> skryt - hidden </p></template>
+    <p>Obrazok a odkaz:
+            <a href="https://www.google.sk">
+                <img alt="obrazok" src="http://localhost/adlerka/image/adlerka.jpg"
+                     width="100px" height="100px">
+            </a>
+        </p>
+    <hr>
 
-    <br> <!-- zalomenie riadku -->
-    <hr> <!-- neparovy tag, ciara -->
+    <h1>Mapa a oblast</h1>
 
-    <!-- style="property: Value; vlastnost: Hodnota;" -->
-    <!--style="color: red;" -->
+    <img src="http://localhost/adlerka/image/adlerka.jpg" alt="Klikni na A" usemap="#workmap" width="300" height="300">
 
-    <p style="color: red;"> Veta.</p>
-    <p>text <span style="color: #ff0000;"> veta1. </span>
-    <span style="color: rgb(255,0,0);"> veta2. </span></p>
+    <map name="workmap">
+        <area shape="rect" coords="23,256,60,300" alt="Adlerka" title="Adlerka" href="http://www.adlerka.sk/">
+        <area shape="circle" coords="150,150,50" alt="Ucitelia" title="Ucitelia" href="http://www.adlerka.sk/stranka/ucitelia/lang/SK">
+        <area shape="default" alt="Vsetko" title="Vsetko" href="http://www.adlerka.sk/stranka/ucitelia/lang/SK">
+    </map>
+    <hr>
 
-    <p style="color: red;">cerveny text</p>
-    <p style="color: #ff0000;">cerveny text</p>
-    <p style="color: rgb(255, 0, 0);">cerveny text</p>
-    <!-- rgb(red, green, blue) -->
+    <!-- www.isdevelop.sk/dospely.mp3
+    www.isdevelop.sk/kolarovci.mp4 -->
+    <h1>Audio</h1>
 
-     <p style="color: hsl(120, 100%, 50%);">zeleny text</p>
-    <!-- hsl(odtien, sitost, svetlost) -->
+    <p>Hraj:</p>
+
+    <audio controls>
+        <!-- autoplay, loop, muted -->
+        <source src="http://localhost/adlerka/media/dospely.mp3"
+                type="audio/mp3">
+        Your browser does not support the audio tag.
+        <!-- mp3, wav, ogg -->
+    </audio>
+    <hr>
+
+    <h1>Video</h1>
+
+    <video width="320" height="240" autoplay controls>
+        <!-- autoplay, loop, muted -->
+        <source src="http://localhost/adlerka/media/kolarovci.mp4"
+                type="video/mp4">
+        <!-- mp4, webm, ogg -->
+        Your browser does not support the video tag.
+    </video>
+    <hr>
 
 
-    <p style="color: rgba(255, 0, 0, 0.5);">cerveny text</p>
-    <!-- rgba(red, green, blue, alpha) -->
+    <h1>Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FgMi9xsY-Ew" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- ?controls=0, &loop=1, &autoplay=1, &mute=1-->
 
-    <p style="color: hsla(120, 100%, 50%, 0.4);">zeleny text</p>
-    <!-- hsla(hue, saturation, lightness, alpha) -->
+    <hr>
 
-   <div style="border: 5px solid red;
-       height: 200px; width:250px; margin: 0 0 0 50px;">
-           <p>blok,</p>
-           <div style="border: 5px dotted red;
-               background-color: rgb(200,56,42);
-               border-radius: 25px 50px">
-               <p>vnoreny blok</p>
-           </div>
-   </div>
+    <h1>The picture element</h1>
 
-   <p style="text-align: left;"> veta1. </p>
-   <p style="text-align: center;">veta2. veta3</p>
-   <p style="text-align: right;"> veta1. </p>
-   <p style="text-align: justify;">veta2. veta3</p>
+    <p>Resize the browser window to load different images.</p>
+    <!-- docasti head pridat <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
-    <p>
-       nejaka <span style="text-decoration: underline overline;
-       text-decoration-color: red;">veta</span> z internetu.
-    </p>
+    <picture>
+        <source media="(min-width:650px)" srcset="http://localhost/adlerka/image/adlerka.jpg">
+        <source media="(min-width:465px)" srcset="http://localhost/adlerka/image/adlerka1.jpg">
+        <img src="http://localhost/adlerka/image/adlerka.jpg" alt="Flowers" style="width:auto;">
+    </picture>
 
-   <p style="text-decoration: line-through;">veta2. veta3</p>
-   <a href="www.google.sk"	style="text-decoration: none;">odkaz</a>
-
-   <p style="text-transform: none;">veta na ukazku.</p>
-   <p style="text-transform: lowercase;">veta na ukazku.</p>
-   <p style="text-transform: uppercase;">veta na ukazku.</p>
-   <p style="text-transform: capitalize;">veta na ukazku.</p>
-
-   <p style="text-indent: 50px;"> veta odsek </p>
-
-   <p style="letter-spacing: 3px;"> veta -10px </p>
-
-   <p style="line-height: 2.8;"> veta </p>
-
-   <p style="word-spacing: 10px;">veta </p>
-
-   <p style="white-space: nowrap;"> veta normal </p>
-
-   <p style="text-shadow: 2px 2px 5px red;"> veta </p>
-
-   <p style="direction: rtl; unicode-bidi: bidi-override;">veta </p>
-
-   <p style="font-family: Arial, 'Times New Roman';"> veta </p>
-
-   <p style="font-size: 20px;"> veta </p>
-
-   <p style="font-weight: normal;"> veta -bold, bolder, lighter </p>
-
-   <p style="font-style: italic;">veta -normal </p>
-
-    </body>
+</body>
 </html>
